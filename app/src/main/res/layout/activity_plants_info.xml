@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.example.pranshu.hackathonproject.PlantsInfoActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/app_bar_custom" />
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="4dp">
+
+            <fr.ganfra.materialspinner.MaterialSpinner
+                android:id="@+id/spinnerArrang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:ms_alignLabels="false"
+                app:ms_arrowColor="@color/arrow"
+                app:ms_arrowSize="24dp"
+                app:ms_baseColor="@color/base"
+                app:ms_enableErrorLabel="false"
+                app:ms_enableFloatingLabel="true"
+                app:ms_errorColor="@color/error"
+                app:ms_floatingLabelColor="@color/floating_label"
+                app:ms_floatingLabelText="Arrangement of the leaf on the stem"
+                app:ms_highlightColor="@color/highlight"
+                app:ms_hint="Arrangement of the leaf on the stem"
+                app:ms_hintColor="@color/hint"
+                app:ms_multiline="false"
+                app:ms_thickness="4dp" />
+
+            <fr.ganfra.materialspinner.MaterialSpinner
+                android:id="@+id/spinnerEdge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:ms_alignLabels="false"
+                app:ms_arrowColor="@color/arrow"
+                app:ms_arrowSize="24dp"
+                app:ms_baseColor="@color/base"
+                app:ms_enableErrorLabel="false"
+                app:ms_enableFloatingLabel="true"
+                app:ms_errorColor="@color/error"
+                app:ms_floatingLabelColor="@color/floating_label"
+                app:ms_floatingLabelText="Edge(Margin)"
+                app:ms_highlightColor="@color/highlight"
+                app:ms_hint="Edge(Margin)"
+                app:ms_hintColor="@color/hint"
+                app:ms_multiline="false"
+                app:ms_thickness="4dp" />
+
+            <fr.ganfra.materialspinner.MaterialSpinner
+                android:id="@+id/spinnerVeins"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:ms_alignLabels="false"
+                app:ms_arrowColor="@color/arrow"
+                app:ms_arrowSize="24dp"
+                app:ms_baseColor="@color/base"
+                app:ms_enableErrorLabel="false"
+                app:ms_enableFloatingLabel="true"
+                app:ms_errorColor="@color/error"
+                app:ms_floatingLabelColor="@color/floating_label"
+                app:ms_floatingLabelText="Veins"
+                app:ms_highlightColor="@color/highlight"
+                app:ms_hint="Veins"
+                app:ms_hintColor="@color/hint"
+                app:ms_multiline="false"
+                app:ms_thickness="4dp" />
+
+            <fr.ganfra.materialspinner.MaterialSpinner
+                android:id="@+id/spinnerApex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:ms_alignLabels="false"
+                app:ms_arrowColor="@color/arrow"
+                app:ms_arrowSize="24dp"
+                app:ms_baseColor="@color/base"
+                app:ms_enableErrorLabel="false"
+                app:ms_enableFloatingLabel="true"
+                app:ms_errorColor="@color/error"
+                app:ms_floatingLabelColor="@color/floating_label"
+                app:ms_floatingLabelText="Apex(Tip)"
+                app:ms_highlightColor="@color/highlight"
+                app:ms_hint="Apex(Tip)"
+                app:ms_hintColor="@color/hint"
+                app:ms_multiline="false"
+                app:ms_thickness="4dp" />
+
+
+            <fr.ganfra.materialspinner.MaterialSpinner
+                android:id="@+id/spinnerStructure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:ms_alignLabels="false"
+                app:ms_arrowColor="@color/arrow"
+                app:ms_arrowSize="24dp"
+                app:ms_baseColor="@color/base"
+                app:ms_enableErrorLabel="false"
+                app:ms_enableFloatingLabel="true"
+                app:ms_errorColor="@color/error"
+                app:ms_floatingLabelColor="@color/floating_label"
+                app:ms_floatingLabelText="Leaf Structure"
+                app:ms_highlightColor="@color/highlight"
+                app:ms_hint="Leaf Structure"
+                app:ms_hintColor="@color/hint"
+                app:ms_multiline="false"
+                app:ms_thickness="4dp" />
+
+            <fr.ganfra.materialspinner.MaterialSpinner
+                android:id="@+id/spinnerShape"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:ms_alignLabels="false"
+                app:ms_arrowColor="@color/arrow"
+                app:ms_arrowSize="24dp"
+                app:ms_baseColor="@color/base"
+                app:ms_enableErrorLabel="false"
+                app:ms_enableFloatingLabel="true"
+                app:ms_errorColor="@color/error"
+                app:ms_floatingLabelColor="@color/floating_label"
+                app:ms_floatingLabelText="Leaf Shapes(or Leaflet)"
+                app:ms_highlightColor="@color/highlight"
+                app:ms_hint="Leaf Shapes(or Leaflet)"
+                app:ms_hintColor="@color/hint"
+                app:ms_multiline="false"
+                app:ms_thickness="4dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <Button
+                    android:id="@+id/submitButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:elevation="4dp"
+                    android:onClick="buttonSubmit"
+                    android:shadowColor="#424242"
+                    android:shadowRadius="0"
+                    android:text="Submit"
+                    android:background="@color/colorPrimary"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textColor="#fff"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

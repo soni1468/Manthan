@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1B5E20</color>
+    <color name="colorPrimaryDark">#004D40</color>
+    <color name="colorAccent">#FFF</color>
+    <color name="colorText">#90A4AE</color>
+    <color name="colorListText">#8BC34A</color>
+    <color name="disabled_color">#44000000</color>
+    <color name="error">#E7492E</color>
+    <color name="arrow">#009688</color>
+    <color name="base">#E0F2F1</color>
+    <color name="floating_label">#0288D1</color>
+    <color name="highlight">#FF9800</color>
+    <color name="hint">#546E7A</color>
+</resources>

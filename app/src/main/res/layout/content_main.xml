@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back100"
+    android:orientation="vertical"
+    android:weightSum="1"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.pranshu.hackathonproject.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="50dp">
+
+        <!--   <android.support.design.widget.TextInputLayout
+               android:id="@+id/input_layout_name"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:paddingBottom="16dp"
+               android:paddingLeft="16dp"
+               android:paddingRight="16dp"
+               android:paddingTop="16dp">  -->
+
+        <AutoCompleteTextView
+            android:id="@+id/input_name"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/edittextstyle"
+            android:hint="Enter specie name"
+            android:maxLines="1"
+            android:shadowColor="#757575"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#000"
+            android:textColorHint="#90A4AE" />
+        <!--    </android.support.design.widget.TextInputLayout>  -->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="16dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="80dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <info.hoang8f.widget.FButton
+                android:id="@+id/searchBut"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginRight="2dp"
+                android:elevation="4dp"
+                android:onClick="showresult"
+                android:text="Search"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#fff"
+                fbutton:buttonColor="#004D40"
+                fbutton:shadowEnabled="true"
+                fbutton:shadowHeight="5dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <info.hoang8f.widget.FButton
+                android:id="@+id/locateBut"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginLeft="2dp"
+                android:elevation="4dp"
+                android:minHeight="50dp"
+                android:minWidth="140dp"
+                android:text="Locate"
+                android:onClick="openMapp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#fff"
+                fbutton:buttonColor="#004D40"
+                fbutton:shadowEnabled="true"
+                fbutton:shadowHeight="5dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/cameraButton"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:elevation="4dp"
+            android:onClick="openCamera"
+            android:shadowColor="#424242"
+            android:shadowRadius="3"
+            android:text="Search Image"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#fff"
+            fbutton:buttonColor="#004D40"
+            fbutton:shadowEnabled="true"
+            fbutton:shadowHeight="5dp" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

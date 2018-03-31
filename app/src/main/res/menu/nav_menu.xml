@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/ayush"
+            android:icon="@drawable/ic_ayush"
+            android:title="Ministry of AYUSH" />
+        <item
+            android:id="@+id/dataset"
+            android:icon="@drawable/ic_dataset"
+            android:title="Data Set" />
+        <item
+            android:id="@+id/nav_commonlist"
+            android:icon="@drawable/ic_species"
+            android:title="Common Species" />
+        <item
+            android:id="@+id/nav_detailed_search"
+            android:icon="@drawable/ic_zoom_in_black_24dp"
+            android:title="Detailed Search" />
+
+    </group>
+    <item android:title="Communicate">
+        <menu>
+
+            <item
+                android:id="@+id/rate"
+                android:icon="@drawable/ic_rate"
+                android:title="Rate" />
+            <item
+                android:id="@+id/about"
+                android:icon="@drawable/ic_aboutus"
+                android:title="About Us" />
+        </menu>
+
+    </item>
+
+</menu>

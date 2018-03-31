@@ -1,0 +1,29 @@
+<resources>
+
+    <!-- NoActionBar FOR CUSTAMIZED Toolbar/App Bar  -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- FOR SETTING THE COLOR OF ELEMENTS IN TOOLBAR i.e TEXT AND THREE DOT -->
+    <style name="myCustomToolbar" parent="Base.ThemeOverlay.AppCompat.Dark">
+        <item name="android:textColorPrimary">#FFF</item>
+        <item name="android:textColorSecondary">#FFF</item>
+    </style>
+
+    <style name="SpecialButton1" parent="Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">#004D40</item>
+        <item name="android:textColorPrimary">#fff</item>
+    </style>
+
+    <!-- RATING BAR DESIGN-->
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">#311B92</item>
+        <item name="colorControlActivated">#EEFF41</item>
+    </style>
+
+</resources>
